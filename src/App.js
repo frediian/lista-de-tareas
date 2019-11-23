@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import './App.css';
 import Cabecera from './componentes/cabecera';
 import PiePagina from './componentes/pie_pagina';
-import Tareas from './componentes/tareas';
+// import NuevaTarea from './componentes/nueva_tarea';
 import Layout from './componentes/layout';
+import ListaTareas from './componentes/lista_tareas';
 
 class App extends Component {
   constructor(props) {
@@ -36,12 +37,14 @@ render() {
            <form onSubmit={this.manejadorDeEntrada}>     
            <input 
               value={this.state.nuevaTarea}
-              onChange={this.manejadorTareas}  type="text" className="new-task"
+              onChange={this.manejadorTareas}  type="text" className="new-task" id="tarea"
            />
             </form>
-          <div className='caja'>
-            { this.state.tareas.map(task => <Tareas /> )}
-          </div>
+
+            <ListaTareas
+              tareas={this.state.tareas}
+              />
+
       <PiePagina/>
       </Layout>
      );
