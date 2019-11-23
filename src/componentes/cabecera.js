@@ -4,10 +4,10 @@ function Cabecera() {
     return (
         <div className="caja" id="alineacion-arriba">
             <h1 className="title">
-            Lista de Deseos
+            Lista de Tareas del Día
             </h1>
             <h4 className="title">
-                escriba uno:
+                escriba una o varias tareas a realizar:
             </h4>
         </div>
     );

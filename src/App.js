@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import './App.css';
 import Cabecera from './componentes/cabecera';
 import PiePagina from './componentes/pie_pagina';
-// import NuevaTarea from './componentes/nueva_tarea';
 import Layout from './componentes/layout';
 import ListaTareas from './componentes/lista_tareas';
+import EntradaTarea from './componentes/entrada_tarea';
+
 
 class App extends Component {
   constructor(props) {
@@ -29,21 +30,28 @@ manejadorDeEntrada=(event)  =>{
   })
 }
 
+manejadorEliminacion = (id) => {
+  let nuevaTarea = this.state.tareas;
+  nuevaTarea.splice(id, 1)
+  this.setState({
+    tareas: nuevaTarea,
+  })
+}
+
 render() {
      return (
       <Layout>
       <Cabecera/>
-            
-           <form onSubmit={this.manejadorDeEntrada}>     
-           <input 
-              value={this.state.nuevaTarea}
-              onChange={this.manejadorTareas}  type="text" className="new-task" id="tarea"
-           />
-            </form>
-
-            <ListaTareas
-              tareas={this.state.tareas}
-              />
+      <EntradaTarea 
+          manejadorDeEntrada={this.manejadorDeEntrada}     
+          manejadorTareas={this.manejadorTareas}
+          value={this.state.nuevaTarea}
+      />
+        
+      <ListaTareas 
+          tareas={this.state.tareas}
+          manejadorEliminacion={this.manejadorEliminacion}
+      />
 
       <PiePagina/>
       </Layout>

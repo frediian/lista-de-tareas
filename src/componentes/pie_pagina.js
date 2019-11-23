@@ -2,7 +2,7 @@ import React from "react";
 
 function PiePagina () {
     return (
-        <div className="caja">  
+        <div className="caja" id="tipo-lista">  
 
             <a
               className="vinculo"

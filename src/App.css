@@ -37,13 +37,17 @@ body {
   margin: 1px 0 1px 0;
 }
 
-/* estilo de los titulos, texto y tareas color y alineación */
+/* estilo de los titulos, texto y tareas color y alineación,
+    solo se define el margen y este debe ir a 0
+    el padding o margin se determina en la etiqueta padre
+*/
 .title {
   text-align: center;
   color: white;
+  margin: 0 0 0 0;
 }
 
-#tarea {
+.tarea {
   text-align: left ;
   padding-left: 3px;
   padding-right: 3px;
@@ -60,8 +64,16 @@ body {
   color: #09d3ac;
   padding-top: 5px;
   display: block;
+  text-decoration: none; 
   
 }
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: antiquewhite;
+  color: #282c34;
+}
+
 .botones{
   background-color: rgb(200, 255, 2);
   display: block;
@@ -69,4 +81,20 @@ body {
   justify-content: center;
   width: 30%;
   padding-top: 5px;
+}
+
+#tipo-lista{
+  display: inline-block;
+}
+
+.caja-borrar {
+  position: relative;
+  float: right;
+  margin: -8px 5px;
+}
+.boton-borrar {
+  background-color: #09d3ac;
+  border-radius: 1px;
+  height: 80%;
+  color: black;
 }
