@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import NuevaTarea from './nueva_tarea';
+import MostrarTarea from './mostrar_tarea';
 
 function ListaTareas (props) {
     return (
@@ -8,11 +8,11 @@ function ListaTareas (props) {
         <div className="caja">
         <Fragment>
             {props.tareas.map((tareas, id) =>   
-                <NuevaTarea
+                <MostrarTarea
                     key={id}
                     id={id}
-                    manejadorEliminacion={props.manejadorEliminacion}
                     value={tareas}
+                    manejadorEliminacion={props.manejadorEliminacion}
                 />
             )}
         </Fragment>

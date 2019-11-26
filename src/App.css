@@ -6,9 +6,9 @@ body {
 }
 
 /* contenedores de los items */
+
 .container {
   display: block;
-  min-width: 640px;
   width: 100%;
   margin-top: 2px;
 }
@@ -24,26 +24,74 @@ body {
 }
  
 .caja {
-  text-align: center;
   background-color: #282c34;
   min-height: 30px;
-  /* min-width: 640px; */
-  width: 80%;
   flex-direction: column ; 
   align-items: baseline ;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  margin: 1px 0 1px 0;
+  margin: 3px 0 ;
+  padding: 5px 3px;
+  text-align: center;
 }
 
+.caja-tareas {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.mostrar-tareas{
+  display: inline-flex;
+  margin: auto auto auto 0; 
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  height: fit-content;
+  min-width: 80%;
+  padding: 0 0 0 3px;
+}
+
+.caja-borrar {
+  display: inline-flex;
+  margin: auto 0 auto 0; 
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  padding: 0 5px;
+}
+
+.boton-borrar {
+  background-color: #09d309;
+  border-radius: 7px;
+  width: 40px;
+  color: black;
+  text-align: center;
+  margin: 0;
+  border-color: white;
+}
+.caja-tareas:hover {
+  background-color: rgb(151, 146, 146);
+}
+.boton-borrar:hover {
+  color: white;
+  background-color: black;
+}
 /* estilo de los titulos, texto y tareas color y alineación,
-    solo se define el margen y este debe ir a 0
-    el padding o margin se determina en la etiqueta padre
+    el margen debe ir a 0 ya que este lo determina la caja padre
+    el padding se determina aqui
 */
-.title {
+.titulo {
   text-align: center;
   color: white;
+  margin: 0 0 0 0;
+}
+.lista-tareas {
+  text-align: left;
+  color: white;
+  width: 100%;
   margin: 0 0 0 0;
 }
 
@@ -54,47 +102,27 @@ body {
   font-size: 16px;
 }
 
-
-
-#alineacion-arriba {
-  display:block;
+.texto-simple{
+  text-align: left ;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 12px;
+  display: inline-block;
+  color: white;
 }
 
 .vinculo {
   color: #09d3ac;
-  padding-top: 5px;
-  display: block;
+  padding: 5px 3px 0 3px;
+  display: inline-block;
   text-decoration: none; 
-  
+  font-size: 14px;
+  margin: 0 4px;
 }
+
 a:hover {
   cursor: pointer;
   text-decoration: underline;
   background-color: antiquewhite;
   color: #282c34;
-}
-
-.botones{
-  background-color: rgb(200, 255, 2);
-  display: block;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  padding-top: 5px;
-}
-
-#tipo-lista{
-  display: inline-block;
-}
-
-.caja-borrar {
-  position: relative;
-  float: right;
-  margin: -8px 5px;
-}
-.boton-borrar {
-  background-color: #09d3ac;
-  border-radius: 1px;
-  height: 80%;
-  color: black;
 }

@@ -4,8 +4,8 @@ import Cabecera from './componentes/cabecera';
 import PiePagina from './componentes/pie_pagina';
 import Layout from './componentes/layout';
 import ListaTareas from './componentes/lista_tareas';
-import EntradaTarea from './componentes/entrada_tarea';
-
+import EscribirTarea from './componentes/escribir_tarea';
+import Titulo from './componentes/titulo';
 
 class App extends Component {
   constructor(props) {
@@ -42,7 +42,8 @@ render() {
      return (
       <Layout>
       <Cabecera/>
-      <EntradaTarea 
+      <Titulo/>
+      <EscribirTarea 
           manejadorDeEntrada={this.manejadorDeEntrada}     
           manejadorTareas={this.manejadorTareas}
           value={this.state.nuevaTarea}

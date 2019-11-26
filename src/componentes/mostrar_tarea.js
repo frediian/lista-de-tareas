@@ -1,9 +1,13 @@
 import React from 'react';
 
-function NuevaTarea (props){
+function MostrarTarea (props){
     return (
-        <div className="caja">
-            <h5 className="title">{props.value}</h5>
+        <div className="caja caja-tareas">
+            {/* <div> */}
+            <div className='mostrar-tareas'>
+            <p className="lista-tareas">{props.value}</p>
+            </div>
+            {/* <div> */}
             <div className="caja-borrar">
                 <button 
                     onClick={ () => props.manejadorEliminacion (props.id)}
@@ -16,4 +20,4 @@ function NuevaTarea (props){
     );
 }
 
-export default NuevaTarea;
+export default MostrarTarea;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function EntradaTarea(props){
+function EscribirTarea(props){
     return (
         <form onSubmit={props.manejadorDeEntrada}>     
         <input 
@@ -15,4 +15,4 @@ function EntradaTarea(props){
     );
 }
 
-export default EntradaTarea;
+export default EscribirTarea;
