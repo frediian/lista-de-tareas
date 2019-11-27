@@ -1,3 +1,20 @@
+Hemos creado un proyecto desde 0, usando un ejemplo muy sencillo
+
+## Requerimientos para realizarlo:
+    Conocimiento Básico de:
+    -   CSS
+    -   JS
+    -   HTML
+
+si desconoces de estas tecnologías se las puede consultar y aprender en la pagina oficial
+
+## Aprenderas fácil y rápido
+ https://developer.mozilla.org/es/
+y Javascript en la pagina oficial de https://developer.mozilla.org/es/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
