@@ -140,12 +140,12 @@ body {
 */
 .titulo {
   text-align: center;
-  color: white;
+  color: rgb(0, 89, 255);
   margin: 0 0 0 0;
 }
 .lista-tareas {
   text-align: left;
-  color: white;
+  color: yellow;
   width: 100%;
   margin: 0 0 0 0;
 }
@@ -180,4 +180,15 @@ a:hover {
   text-decoration: underline;
   background-color: #09d3ac;
   color: black;
+}
+
+.texto-derecha {
+  text-align: left;
+}
+
+.texto-derecha> .titulo {
+  text-align: left;
+}
+.caja-cabecera> div> div>.titulo {
+  color: yellow;
 }

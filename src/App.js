@@ -6,6 +6,7 @@ import Layout from './componentes/layout';
 import ListaTareas from './componentes/lista_tareas';
 import EscribirTarea from './componentes/escribir_tarea';
 import Titulo from './componentes/titulo';
+import Descripcion from './componentes/descripcion';
 
 class App extends Component {
   constructor(props) {
@@ -41,8 +42,9 @@ manejadorEliminacion = (id) => {
 render() {
      return (
       <Layout>
+
       <Cabecera/>
-      <Titulo/>
+      <Descripcion/>
       <EscribirTarea 
           manejadorDeEntrada={this.manejadorDeEntrada}     
           manejadorTareas={this.manejadorTareas}
@@ -53,8 +55,9 @@ render() {
           tareas={this.state.tareas}
           manejadorEliminacion={this.manejadorEliminacion}
       />
-
+      <Titulo/>
       <PiePagina/>
+
       </Layout>
      );
   }
