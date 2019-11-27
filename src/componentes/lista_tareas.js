@@ -4,7 +4,8 @@ import MostrarTarea from './mostrar_tarea';
 function ListaTareas (props) {
     return (
 
-// creamos una caja para que se guarden todas las tareas aquí
+// creamos una caja para que se guarden y muestren todas las tareas
+// conforme las agregamos
         <div className="caja">
         <Fragment>
             {props.tareas.map((tareas, id) =>   

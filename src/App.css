@@ -13,23 +13,22 @@ body {
   margin-top: 2px;
 }
 
-.new-task {
+.escribir-tarea {
   display: block;
-  width: 100%;
+  width: 96%;
   background-color: azure;
-  border-radius: 8px;
+  border-radius: 20px;
   height: 40px;
   border-color: aquamarine;
   border-width: 2px;
+  margin: auto;
 }
  
 .caja {
   background-color: #282c34;
   min-height: 30px;
   flex-direction: column ; 
-  align-items: baseline ;
-  justify-content: center;
-  margin: 3px 0 ;
+  margin: 5px 0 ;
   padding: 5px 3px;
   text-align: center;
 }
@@ -39,6 +38,7 @@ body {
   display: -webkit-flex;
   -webkit-flex-direction: row;
   flex-direction: row;
+  background-color: #1a1b1b;
 }
 
 .mostrar-tareas{
@@ -64,21 +64,76 @@ body {
 }
 
 .boton-borrar {
-  background-color: #09d309;
-  border-radius: 7px;
-  width: 40px;
-  color: black;
-  text-align: center;
+  color: white;
+  background-color: transparent;
+  /* background-color:#282c34;  */  
   margin: 0;
-  border-color: white;
+  text-align: center;
+  border-color: none;
+  width: 40px;
+  border-style: none;
+  border-radius: 10px;
+  
 }
+
 .caja-tareas:hover {
   background-color: rgb(151, 146, 146);
 }
+
 .boton-borrar:hover {
-  color: white;
-  background-color: black;
+    background-color: rgb(0, 247, 255);
+    width: 40px;
+    color: black;
+    margin: 0;
 }
+.caja-cabecera {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin:auto;
+}
+
+.logo-imagen {
+    height: 60px; 
+    width: 60px; 
+    margin: auto 0;
+}
+.caja-cabecera > div:nth-child(1) {
+  height: auto;
+  margin: auto 0;  
+  display: inline-flex;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  padding: 0 5px;
+}
+.caja-cabecera > div:nth-child(2) {
+    height: auto;
+    margin: 0 auto 0 0;  
+    display: inline-flex;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    padding: 0 5px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
+}
+.caja-cabecera > div > div:nth-child(1) { 
+  min-height: 30px; 
+  margin: 0 auto 0 0;
+  font-size: 30px;
+}
+.caja-cabecera > div > div:nth-child(2) { 
+  min-height: 30px; 
+  margin: 0 auto 0 0;
+}
+
+
 /* estilo de los titulos, texto y tareas color y alineación,
     el margen debe ir a 0 ya que este lo determina la caja padre
     el padding se determina aqui
@@ -97,8 +152,7 @@ body {
 
 .tarea {
   text-align: left ;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 0 5px 0 5px;
   font-size: 16px;
 }
 
@@ -109,6 +163,7 @@ body {
   font-size: 12px;
   display: inline-block;
   color: white;
+  margin: 0;
 }
 
 .vinculo {
@@ -117,12 +172,12 @@ body {
   display: inline-block;
   text-decoration: none; 
   font-size: 14px;
-  margin: 0 4px;
+  margin: 0 8px 0 0;
 }
 
 a:hover {
   cursor: pointer;
   text-decoration: underline;
-  background-color: antiquewhite;
-  color: #282c34;
+  background-color: #09d3ac;
+  color: black;
 }
