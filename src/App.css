@@ -1,6 +1,6 @@
 /*  color y alineacción de la pagina */
 body {
-  background-color: black;
+  background-color: white;
   display: flex;
   justify-content: center;
 }
